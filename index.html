@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web App</title>
+    <link rel="stylesheet" href="style.css">
+    
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+
+</head>
+<body>
+    <div id="main">
+        
+        
+
+        <section class="allElems">
+            <nav>
+            <h2>Productivity Dashboard</h2>
+            <button class="theme">Change Theme</button>
+            </nav>
+            <header>
+            <div class="header1">
+                <h2></h2>
+                <h1></h1>
+                <h4>Shahada, Maharashtra</h4>
+            </div>
+               <div class="header2">
+                <h4></h4>
+                <h2></h2>
+                <h3 class="humidity"></h3>
+                <h3 class="wind"></h3>         
+               </div>
+            </header>
+            <section class="allFeatures">
+                <div class="todo elem" id="0">
+                <img src="https://images.unsplash.com/photo-1704078541927-7a0da547f730?w=1000&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTAyfHwzZHxlbnwwfHwwfHx8MA%3D%3D" alt="">
+                <h2>To Do List</h2>
+            </div>
+            <div class="daily elem" id="1">
+                <img src="https://images.unsplash.com/photo-1637140945341-f28ada987326?w=1000&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NDZ8fDNkfGVufDB8fDB8fHww" alt="">
+                <h2>Daily Planner</h2>
+            </div>
+            <div class="moti elem" id="2">
+                <img src="https://images.unsplash.com/photo-1697498435309-2c7864cfd607?w=1000&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTF8fDNkfGVufDB8fDB8fHww" alt="">
+                <h2>Motivation</h2>
+            </div>
+            <div class="pomo elem" id="3">
+                <img src="https://images.unsplash.com/photo-1642059893618-22daf30e92a2?w=1000&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTE0fHwzZHxlbnwwfHwwfHx8MA%3D%3D" alt="">
+                <h2>Pomodoro Timer</h2>
+            </div>
+            </section>
+        </section>
+        
+        <section class="FullElem todo-list" id="0">
+            <button class="close" id="0">Close</button>
+            <h1>Your Personalised Task List</h1>
+            <div class="todo-container">
+                <div class="addTask">
+                <form id="taskForm">
+                    <h3>Add a Task!</h3>
+                    <input type="text" id="taskInput" placeholder="Enter a task" required>
+                    <button type="submit">
+                        Add Task
+                    </button>
+                 </form>
+                </div>
+                <div class="allTask">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <section class="FullElem daily-planner" id="1">
+            <button class="close" id="1">Close</button>
+            <h1>Plan Your Day To Be Productive!</h1>
+            <br>
+            <div class="dayPlanner">
+            </div>
+        </section>
+
+
+        <section class="FullElem motivation" id="2">
+            <button class="close" id="2">Close</button>
+            <h1>Daily Dose of Motivation</h1>
+            <div class="motivation-container">
+                <h1 id="quote"></h1>
+                <div class="motivation-author">
+                    <h2 id="author"></h2>
+                </div>
+            </div>
+        </section>
+
+
+        <section class="FullElem pomodoro" id="3">
+            <button class="close" id="3">Close</button>
+            <h1>Study With Me!</h1>
+            <h4 class="session">Work Session</h4>
+            <div class="pomo-timer">
+                <h1 id="timer">25:00</h1>
+                <div class="pomo-controls">
+                    <button id="start">Start</button>
+                    <button id="pause">Pause</button>
+                    <button id="reset">Reset</button>
+            </div>
+        </section>
+
+        
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
